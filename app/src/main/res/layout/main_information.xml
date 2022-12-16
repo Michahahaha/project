@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/back"
+    tools:context=".page"
+    >
+
+    <ImageView
+        android:id="@+id/page_image"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        android:src="@drawable/oven"
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page_image"
+        android:id="@+id/page_zodiak"
+        android:layout_centerHorizontal="true"
+        android:text="Зодиак"
+        android:textStyle="bold"
+        android:textSize="30dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        />
+
+    <RelativeLayout
+        android:layout_width="195dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/page_zodiak"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/da"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="20dp"
+        >
+
+        <TextView
+            android:layout_centerVertical="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Дата:"
+            android:textStyle="italic"
+            android:textSize="23dp"
+            android:textColor="#666666"
+            android:id="@+id/data"
+        />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/page_data"
+            android:text="11.12.2022"
+            android:textStyle="italic"
+            android:textSize="23dp"
+            android:textColor="#666666"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/data"
+            android:layout_alignBottom="@+id/data"
+        />
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:layout_below="@id/da"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/page_prediction"
+        android:text="Бла бла бла бла бла бла бла, я тоже верю в чудеса."
+        android:textStyle="normal"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        />
+
+</RelativeLayout>
